@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oto Elektrik</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Üst Bilgi Çubuğu Başlangıç -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-7">
+                    <div class="top-bar-info">
+                        <span><i class="fas fa-phone-alt"></i><a href="tel:00000000000">0 000 000 00 00</a></span>
+                        <span><i class="fas fa-envelope"></i><a href="mailto:xxxx@hotmail.com">xxxx@hotmail.com</a></span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 text-end">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Üst Bilgi Çubuğu Bitiş -->
+
+    <!-- Navbar Başlangıç -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="blue">OTO</span> <span class="orange">ELEKTRİK</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="urunler.html">Ürünler</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            E-Ticaret
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://www.n11.com" target="_blank">N11</a></li>
+                            <li><a class="dropdown-item" href="https://www.trendyol.com" target="_blank">Trendyol</a></li>
+                            <li><a class="dropdown-item" href="https://www.hepsiburada.com" target="_blank">Hepsiburada</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Bitiş -->
+
+    <!-- Hero Section Başlangıç -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/fotoğraflar/zapchst.jpg" class="d-block w-100" alt="Oto Yedek Parça">
+                <div class="carousel-overlay">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-6">
+                                <div class="carousel-content">
+                                    <h2>Hakkımızda</h2>
+                                    <p class="lead">Otomotiv sektöründe 20 yılı aşkın tecrübemizle, müşterilerimize en kaliteli yedek parça ve akü çözümlerini sunuyoruz.</p>
+                                    <p>Profesyonel ekibimiz ve geniş ürün yelpazemizle araç sahiplerinin tüm ihtiyaçlarını karşılamak için buradayız.</p>
+                                    <a href="hakkimizda.html" class="btn btn-primary mt-3">Daha Fazla Bilgi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/fotoğraflar/617fdcef214ed80ce0bf020f.webp" class="d-block w-100" alt="Akü">
+                <div class="carousel-caption">
+                    <h2>Adana Yetkili Yedek Oto Parça</h2>
+                    <p>Adana Mutlu Akü, İnci Akü Yetkili Bayii</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Önceki</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Sonraki</span>
+        </button>
+    </div>
+    <!-- Hero Section Bitiş -->
+
+    <!-- Hizmetlerimiz Section Başlangıç -->
+    <section id="hizmetlerimiz" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title-center">Hizmetlerimiz</h2>
+                    <p class="lead">Araç sahiplerine sunduğumuz kaliteli ve güvenilir hizmetlerimiz</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body p-4 text-center">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-car-battery fa-3x text-warning"></i>
+                            </div>
+                            <h4 class="card-title">Akü Satış ve Montaj</h4>
+                            <p class="card-text">Mutlu Akü ve İnci Akü yetkili bayii olarak, araçlarınız için en uygun aküleri temin ediyoruz. Profesyonel ekibimizle hızlı ve güvenilir montaj hizmeti sunuyoruz.</p>
+                            <a href="#aku-satis" class="btn btn-outline-warning mt-3">Detaylı Bilgi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body p-4 text-center">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-tools fa-3x text-warning"></i>
+                            </div>
+                            <h4 class="card-title">Oto Elektrik Servisi</h4>
+                            <p class="card-text">Araçlarınızın elektrik sistemlerindeki tüm sorunları profesyonel ekibimizle çözüyoruz. Arıza tespiti ve onarım işlemlerini hızlı bir şekilde gerçekleştiriyoruz.</p>
+                            <a href="#elektrik-servisi" class="btn btn-outline-warning mt-3">Detaylı Bilgi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body p-4 text-center">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-route fa-3x text-warning"></i>
+                            </div>
+                            <h4 class="card-title">7/24 Yol Yardımı</h4>
+                            <p class="card-text">Yolda kaldığınızda 7/24 hizmet veren yol yardım ekibimizle yanınızdayız. Acil durumlar için hızlı müdahale ve çekici hizmeti sunuyoruz.</p>
+                            <a href="#yol-yardimi" class="btn btn-outline-warning mt-3">Detaylı Bilgi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hizmetlerimiz Section Bitiş -->
+
+    <!-- Neden Bizi Tercih Etmelisiniz Section Başlangıç -->
+    <section id="neden-biz" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title-center">Neden Bizi Tercih Etmelisiniz?</h2>
+                    <p class="lead">Müşteri memnuniyeti odaklı çalışma prensibimizle fark yaratıyoruz</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body p-4 text-center">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-medal fa-3x text-warning"></i>
+                            </div>
+                            <h4 class="card-title">Kaliteli Ürünler</h4>
+                            <p class="card-text">Sadece en kaliteli ve güvenilir markaların ürünlerini sunuyoruz. Tüm ürünlerimiz garantili ve orijinaldir. Müşterilerimize daima en iyi kaliteyi sunmayı hedefliyoruz.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body p-4 text-center">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-tools fa-3x text-warning"></i>
+                            </div>
+                            <h4 class="card-title">Uzman Ekip</h4>
+                            <p class="card-text">Deneyimli ve profesyonel ekibimizle en iyi hizmeti sunuyoruz. Teknisyenlerimiz düzenli olarak eğitim alarak, en son teknolojik gelişmeleri takip etmektedir.</p>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body p-4 text-center">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-headset fa-3x text-warning"></i>
+                            </div>
+                            <h4 class="card-title">7/24 Destek</h4>
+                            <p class="card-text">Her zaman yanınızdayız, ihtiyaç duyduğunuzda bize ulaşabilirsiniz. Acil durumlarda hızlı müdahale ekibimiz ile sorunlarınızı en kısa sürede çözüyoruz.</p>
+         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Neden Bizi Tercih Etmelisiniz Section Bitiş -->
+
+    <!-- Footer Başlangıç -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-4">İletişim Bilgileri</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> Adres: Örnek Mahallesi, Örnek Sokak No:123, Adana</p>
+                    <p><i class="fas fa-phone-alt me-2"></i> Telefon: 0 000 000 00 00</p>
+                    <p><i class="fas fa-envelope me-2"></i> E-posta: xxxx@hotmail.com</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-4">Hızlı Linkler</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Ana Sayfa</a></li>
+                        <li class="mb-2"><a href="hakkimizda.html" class="text-white text-decoration-none">Hakkımızda</a></li>
+                        <li class="mb-2"><a href="urunler.html" class="text-white text-decoration-none">Ürünler</a></li>
+                        <li class="mb-2"><a href="#hizmetlerimiz" class="text-white text-decoration-none">Hizmetlerimiz</a></li>
+                        <li class="mb-2"><a href="iletisim.html" class="text-white text-decoration-none">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-4">Çalışma Saatleri</h5>
+                    <p>Pazartesi - Cuma: 08:00 - 18:00</p>
+                    <p>Cumartesi: 09:00 - 16:00</p>
+                    <p>Pazar: Kapalı</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2023 Oto Elektrik. Tüm hakları saklıdır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Bitiş -->
+
+    <!-- Bootstrap JS ve Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html> 

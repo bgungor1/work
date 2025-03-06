@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünlerimiz - Oto Elektrik</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Üst Bilgi Çubuğu Başlangıç -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-7">
+                    <div class="top-bar-info">
+                        <span><i class="fas fa-phone-alt"></i><a href="tel:00000000000">0 000 000 00 00</a></span>
+                        <span><i class="fas fa-envelope"></i><a href="mailto:xxxx@hotmail.com">xxxx@hotmail.com</a></span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 text-end">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Üst Bilgi Çubuğu Bitiş -->
+
+    <!-- Navbar Başlangıç -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="blue">OTO</span> <span class="orange">ELEKTRİK</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="urunler.html">Ürünler</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            E-Ticaret
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://www.n11.com" target="_blank">N11</a></li>
+                            <li><a class="dropdown-item" href="https://www.trendyol.com" target="_blank">Trendyol</a></li>
+                            <li><a class="dropdown-item" href="https://www.hepsiburada.com" target="_blank">Hepsiburada</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Bitiş -->
+
+    <!-- Sayfa Başlık Bölümü -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Ürünlerimiz</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Ürünlerimiz</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ürün Kategorileri -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title-center">Ürün Kategorilerimiz</h2>
+                    <p class="lead">Araçlarınız için ihtiyacınız olan tüm ürünler</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="category-box text-center">
+                        <div class="category-icon mb-3">
+                            <i class="fas fa-car-battery fa-3x text-warning"></i>
+                        </div>
+                        <h3>Aküler</h3>
+                        <p>Mutlu Akü, İnci Akü, Varta, Bosch ve diğer markalardan kaliteli ve uzun ömürlü aküler.</p>
+                        <a href="#akuSection" class="btn btn-outline-warning">Ürünleri Gör</a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="category-box text-center">
+                        <div class="category-icon mb-3">
+                            <i class="fas fa-bolt fa-3x text-warning"></i>
+                        </div>
+                        <h3>Elektrik Parçaları</h3>
+                        <p>Alternatörler, marş motorları, far sistemleri ve araç elektrik sistemleri için kaliteli parçalar.</p>
+                        <a href="#elektrikSection" class="btn btn-outline-warning">Ürünleri Gör</a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="category-box text-center">
+                        <div class="category-icon mb-3">
+                            <i class="fas fa-tools fa-3x text-warning"></i>
+                        </div>
+                        <h3>Yedek Parçalar</h3>
+                        <p>Çeşitli araç modelleri için fren balataları, yağ filtreleri, amortisörler ve daha fazla yedek parça.</p>
+                        <a href="#parcaSection" class="btn btn-outline-warning">Ürünleri Gör</a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="category-box text-center">
+                        <div class="category-icon mb-3">
+                            <i class="fas fa-plus-circle fa-3x text-warning"></i>
+                        </div>
+                        <h3>Daha Fazlası</h3>
+                        <p>Daha fazla ürün ve kampanya için e-ticaret platformlarımızı ziyaret edebilirsiniz.</p>
+                        <div class="ecommerce-buttons mt-3">
+                            <a href="https://www.n11.com" target="_blank" class="btn btn-n11 btn-sm mb-2 w-100"><i class="fas fa-shopping-cart me-2"></i> N11</a>
+                            <a href="https://www.trendyol.com" target="_blank" class="btn btn-trendyol btn-sm mb-2 w-100"><i class="fas fa-shopping-cart me-2"></i> Trendyol</a>
+                            <a href="https://www.hepsiburada.com" target="_blank" class="btn btn-hepsiburada btn-sm w-100"><i class="fas fa-shopping-cart me-2"></i> Hepsiburada</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aküler Bölümü -->
+    <section id="akuSection" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title-center">Aküler</h2>
+                    <p class="lead">Araçlarınız için en uygun akü çözümleri</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <!-- Ürün 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/fotoğraflar/617fdcef214ed80ce0bf020f.webp" alt="Mutlu Akü" class="img-fluid">
+                            <div class="product-tag">Yeni</div>
+                        </div>
+                        <div class="product-body">
+                            <h4 class="product-title">Mutlu Akü 60 AH</h4>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i> 2 Yıl Garanti</span>
+                                <span><i class="fas fa-check-circle"></i> Ücretsiz Montaj</span>
+                            </div>
+                            <p class="product-text">Binek araçlar için ideal, yüksek performanslı akü.</p>
+                            <a href="urun-detay-mutlu-aku.html" class="btn btn-warning w-100">Detayları Gör</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ürün 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/fotoğraflar/617fdcef214ed80ce0bf020f.webp" alt="İnci Akü" class="img-fluid">
+                            <div class="product-tag">İndirimli</div>
+                        </div>
+                        <div class="product-body">
+                            <h4 class="product-title">İnci Akü 72 AH</h4>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i> 3 Yıl Garanti</span>
+                                <span><i class="fas fa-check-circle"></i> Ücretsiz Montaj</span>
+                            </div>
+                            <p class="product-text">SUV ve büyük araçlar için güçlü ve dayanıklı akü.</p>
+                            <a href="urun-detay-inci-aku.html" class="btn btn-warning w-100">Detayları Gör</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ürün 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/fotoğraflar/617fdcef214ed80ce0bf020f.webp" alt="Varta Akü" class="img-fluid">
+                        </div>
+                        <div class="product-body">
+                            <h4 class="product-title">Varta Akü 90 AH</h4>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i> 3 Yıl Garanti</span>
+                                <span><i class="fas fa-check-circle"></i> Ücretsiz Montaj</span>
+                            </div>
+                            <p class="product-text">Ticari araçlar için uzun ömürlü, yüksek performanslı akü.</p>
+                            <a href="urun-detay-varta-aku.html" class="btn btn-warning w-100">Detayları Gör</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ürün 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/fotoğraflar/617fdcef214ed80ce0bf020f.webp" alt="Mutlu Akü" class="img-fluid">
+                            <div class="product-tag">Popüler</div>
+                        </div>
+                        <div class="product-body">
+                            <h4 class="product-title">Mutlu Akü 100 AH</h4>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i> 2 Yıl Garanti</span>
+                                <span><i class="fas fa-check-circle"></i> Ücretsiz Montaj</span>
+                            </div>
+                            <p class="product-text">Ağır hizmet araçları için yüksek kapasiteli akü.</p>
+                            <a href="urun-detay-mutlu-aku-100.html" class="btn btn-warning w-100">Detayları Gör</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ürün 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/fotoğraflar/617fdcef214ed80ce0bf020f.webp" alt="İnci Akü" class="img-fluid">
+                            <div class="product-tag">Premium</div>
+                        </div>
+                        <div class="product-body">
+                            <h4 class="product-title">İnci Akü 90 AH</h4>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i> 3 Yıl Garanti</span>
+                                <span><i class="fas fa-check-circle"></i> Ücretsiz Montaj</span>
+                            </div>
+                            <p class="product-text">Ticari araçlar için uzun ömürlü, yüksek performanslı akü.</p>
+                            <a href="urun-detay-inci-aku-90.html" class="btn btn-warning w-100">Detayları Gör</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ürün 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/fotoğraflar/617fdcef214ed80ce0bf020f.webp" alt="Varta Akü" class="img-fluid">
+                            <div class="product-tag">Yeni</div>
+                        </div>
+                        <div class="product-body">
+                            <h4 class="product-title">Varta Akü 110 AH</h4>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i> 3 Yıl Garanti</span>
+                                <span><i class="fas fa-check-circle"></i> Ücretsiz Montaj</span>
+                            </div>
+                            <p class="product-text">Ağır hizmet araçları için yüksek kapasiteli akü.</p>
+                            <a href="urun-detay-varta-aku-110.html" class="btn btn-warning w-100">Detayları Gör</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ürün 7 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/fotoğraflar/617fdcef214ed80ce0bf020f.webp" alt="Exide Akü" class="img-fluid">
+                        </div>
+                        <div class="product-body">
+                            <h4 class="product-title">Exide Akü 75 AH</h4>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i> 2 Yıl Garanti</span>
+                                <span><i class="fas fa-check-circle"></i> Ücretsiz Montaj</span>
+                            </div>
+                            <p class="product-text">Binek araçlar için yüksek performanslı akü.</p>
+                            <a href="urun-detay-exide-aku-75.html" class="btn btn-warning w-100">Detayları Gör</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ürün 8 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/fotoğraflar/617fdcef214ed80ce0bf020f.webp" alt="Bosch Akü" class="img-fluid">
+                            <div class="product-tag">Premium</div>
+                        </div>
+                        <div class="product-body">
+                            <h4 class="product-title">Bosch Akü 80 AH</h4>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i> 3 Yıl Garanti</span>
+                                <span><i class="fas fa-check-circle"></i> Ücretsiz Montaj</span>
+                            </div>
+                            <p class="product-text">SUV ve büyük araçlar için Alman kalitesi.</p>
+                            <a href="urun-detay-bosch-aku-80.html" class="btn btn-warning w-100">Detayları Gör</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ürün 9 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/fotoğraflar/617fdcef214ed80ce0bf020f.webp" alt="Deta Akü" class="img-fluid">
+                            <div class="product-tag">İndirimli</div>
+                        </div>
+                        <div class="product-body">
+                            <h4 class="product-title">Deta Akü 95 AH</h4>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i> 2 Yıl Garanti</span>
+                                <span><i class="fas fa-check-circle"></i> Ücretsiz Montaj</span>
+                            </div>
+                            <p class="product-text">Ticari araçlar için uzun ömürlü akü.</p>
+                            <a href="urun-detay-deta-aku-95.html" class="btn btn-warning w-100">Detayları Gör</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Elektrik Parçaları Bölümü -->
+    <section id="elektrikSection" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title-center">Elektrik Parçaları</h2>
+                    <p class="lead">Araç elektrik sistemleri için kaliteli parçalar</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Ürün 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/fotoğraflar/zapchst.jpg" alt="Alternatör" class="img-fluid">
+                            <div class="product-tag">Yeni</div>
+                        </div>
+                        <div class="product-body">
+                            <h4 class="product-title">Bosch Alternatör</h4>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i> 1 Yıl Garanti</span>
+                                <span><i class="fas fa-check-circle"></i> Orijinal Ürün</span>
+                            </div>
+                            <p class="product-text">Yüksek performanslı, uzun ömürlü alternatör.</p>
+                            <a href="urun-detay-alternator.html" class="btn btn-warning w-100">Detayları Gör</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ürün 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/fotoğraflar/zapchst.jpg" alt="Marş Motoru" class="img-fluid">
+                        </div>
+                        <div class="product-body">
+                            <h4 class="product-title">Valeo Marş Motoru</h4>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i> 1 Yıl Garanti</span>
+                                <span><i class="fas fa-check-circle"></i> Orijinal Ürün</span>
+                            </div>
+                            <p class="product-text">Güvenilir ve dayanıklı marş motoru.</p>
+                            <a href="urun-detay-mars-motoru.html" class="btn btn-warning w-100">Detayları Gör</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ürün 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/fotoğraflar/zapchst.jpg" alt="Far" class="img-fluid">
+                            <div class="product-tag">İndirimli</div>
+                        </div>
+                        <div class="product-body">
+                            <h4 class="product-title">LED Far Sistemi</h4>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i> 2 Yıl Garanti</span>
+                                <span><i class="fas fa-check-circle"></i> Kolay Montaj</span>
+                            </div>
+                            <p class="product-text">Yüksek parlaklıkta, enerji tasarruflu LED far sistemi.</p>
+                            <a href="urun-detay-led-far.html" class="btn btn-warning w-100">Detayları Gör</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Yedek Parçalar Bölümü -->
+    <section id="parcaSection" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title-center">Yedek Parçalar</h2>
+                    <p class="lead">Araçlarınız için orijinal ve kaliteli yedek parçalar</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Ürün 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/fotoğraflar/zapchst.jpg" alt="Fren Balatası" class="img-fluid">
+                        </div>
+                        <div class="product-body">
+                            <h4 class="product-title">Fren Balatası Seti</h4>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i> Orijinal Ürün</span>
+                                <span><i class="fas fa-check-circle"></i> Tüm Modeller</span>
+                            </div>
+                            <p class="product-text">Yüksek performanslı, uzun ömürlü fren balatası seti.</p>
+                            <a href="urun-detay-fren-balatasi.html" class="btn btn-warning w-100">Detayları Gör</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ürün 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/fotoğraflar/zapchst.jpg" alt="Yağ Filtresi" class="img-fluid">
+                            <div class="product-tag">İndirimli</div>
+                        </div>
+                        <div class="product-body">
+                            <h4 class="product-title">Yağ Filtresi</h4>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i> Orijinal Ürün</span>
+                                <span><i class="fas fa-check-circle"></i> Tüm Modeller</span>
+                            </div>
+                            <p class="product-text">Motor performansını artıran, uzun ömürlü yağ filtresi.</p>
+                            <a href="urun-detay-yag-filtresi.html" class="btn btn-warning w-100">Detayları Gör</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ürün 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/fotoğraflar/zapchst.jpg" alt="Amortisör" class="img-fluid">
+                            <div class="product-tag">Yeni</div>
+                        </div>
+                        <div class="product-body">
+                            <h4 class="product-title">Amortisör Seti</h4>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i> 2 Yıl Garanti</span>
+                                <span><i class="fas fa-check-circle"></i> Profesyonel Montaj</span>
+                            </div>
+                            <p class="product-text">Konforlu sürüş için yüksek kaliteli amortisör seti.</p>
+                            <a href="urun-detay-amortisör.html" class="btn btn-warning w-100">Detayları Gör</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Başlangıç -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-4">İletişim Bilgileri</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> Adres: Örnek Mahallesi, Örnek Sokak No:123, Adana</p>
+                    <p><i class="fas fa-phone-alt me-2"></i> Telefon: 0 000 000 00 00</p>
+                    <p><i class="fas fa-envelope me-2"></i> E-posta: xxxx@hotmail.com</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-4">Hızlı Linkler</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Ana Sayfa</a></li>
+                        <li class="mb-2"><a href="hakkimizda.html" class="text-white text-decoration-none">Hakkımızda</a></li>
+                        <li class="mb-2"><a href="urunler.html" class="text-white text-decoration-none">Ürünler</a></li>
+                        <li class="mb-2"><a href="#hizmetlerimiz" class="text-white text-decoration-none">Hizmetlerimiz</a></li>
+                        <li class="mb-2"><a href="iletisim.html" class="text-white text-decoration-none">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-4">Çalışma Saatleri</h5>
+                    <p>Pazartesi - Cuma: 08:00 - 18:00</p>
+                    <p>Cumartesi: 09:00 - 16:00</p>
+                    <p>Pazar: Kapalı</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2023 Oto Elektrik. Tüm hakları saklıdır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Bitiş -->
+
+    <!-- Bootstrap JS ve Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html> 
