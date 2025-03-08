@@ -1,0 +1,108 @@
+/* Şehir Sayfaları için Özel Stiller */
+.content-section {
+    position: relative;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.content-section h1 {
+    color: var(--blue-color);
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.content-section h1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to right, var(--blue-color), var(--orange-color));
+}
+
+.content-section h2 {
+    color: var(--orange-color);
+    position: relative;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.content-section h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70px;
+    height: 2px;
+    background-color: var(--warning-color);
+}
+
+.content-section p {
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.content-section ul.list-unstyled li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #ddd;
+    color: #555;
+}
+
+.content-section ul.list-unstyled li:last-child {
+    border-bottom: none;
+}
+
+.back-to-products {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--warning-color);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 25px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.back-to-products:hover {
+    background-color: var(--orange-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.back-to-products i {
+    margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+    .content-section {
+        padding: 20px;
+    }
+    
+    .content-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .content-section h2 {
+        font-size: 1.4rem;
+    }
+    
+    .back-to-products {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+} 
