@@ -1543,4 +1543,52 @@ body {
         height: 50px;
         font-size: 25px;
     }
+}
+
+/* Blog Kartları Stilleri */
+.blog-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: var(--accent-color);
+}
+
+.blog-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.blog-card .card-body {
+    padding: 1.5rem;
+}
+
+.blog-card .card-title {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.blog-card .card-text {
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.blog-card .btn {
+    border-radius: 4px;
+    padding: 0.5rem 1.25rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.blog-card .btn:hover {
+    transform: scale(1.05);
 } 
