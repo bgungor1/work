@@ -1591,4 +1591,45 @@ body {
 
 .blog-card .btn:hover {
     transform: scale(1.05);
+}
+
+/* Ürünlere Git Butonu */
+.products-button {
+    position: fixed;
+    left: 0;
+    bottom: 20px;
+    background-color: var(--blue-color);
+    color: white;
+    padding: 12px 15px;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.products-button i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+.products-button:hover {
+    background-color: #0069d9;
+    transform: translateX(5px);
+    color: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 576px) {
+    .products-button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .products-button i {
+        font-size: 1rem;
+    }
 } 

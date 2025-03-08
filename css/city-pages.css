@@ -63,23 +63,27 @@
 
 .back-to-products {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: var(--warning-color);
+    bottom: 20px;
+    left: 0;
+    background-color: var(--blue-color);
     color: #fff;
     border: none;
-    border-radius: 50px;
-    padding: 12px 25px;
+    border-radius: 0 5px 5px 0;
+    padding: 12px 20px;
     font-weight: 600;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
     z-index: 999;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .back-to-products:hover {
-    background-color: var(--orange-color);
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    background-color: #0069d9;
+    transform: translateX(5px);
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .back-to-products i {
@@ -96,13 +100,15 @@
     }
     
     .content-section h2 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
     
     .back-to-products {
-        bottom: 20px;
-        right: 20px;
-        padding: 10px 20px;
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .back-to-products i {
         font-size: 0.9rem;
     }
 } 
