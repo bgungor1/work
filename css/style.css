@@ -1175,6 +1175,13 @@ body {
     border: none;
 }
 
+/* Ürün detay sekmeleri için metin rengi düzeltmesi */
+.nav-tabs .nav-link, 
+.nav-tabs .nav-link:hover, 
+.nav-tabs .nav-link.active {
+    color: #000 !important; /* Siyah renk ve !important ile diğer kuralları ezme */
+}
+
 .tab-content {
     border-radius: 0 5px 5px 5px;
     background-color: #fff;
@@ -1263,6 +1270,19 @@ body {
     color: #ff6600;
     background-color: rgba(255, 255, 255, 0.1);
     text-decoration: none;
+}
+
+/* E-ticaret dropdown menüsü için özel hover efektleri */
+.dropdown-item[href*="n11"]:hover {
+    color: #7d20bd !important; /* N11 mor rengi */
+}
+
+.dropdown-item[href*="trendyol"]:hover {
+    color: #ff6600 !important; /* Trendyol turuncu rengi */
+}
+
+.dropdown-item[href*="hepsiburada"]:hover {
+    color: #ffffff !important; /* Hepsiburada için beyaz */
 }
 
 .dropdown-toggle::after {
