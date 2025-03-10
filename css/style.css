@@ -1632,4 +1632,27 @@ body {
     .products-button i {
         font-size: 1rem;
     }
+}
+
+/* Stok Bilgisi Stili */
+.stock-info {
+    display: inline-block;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 8px 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-left: 4px solid #2e7d32;
+}
+
+.stock-info i {
+    margin-right: 8px;
+}
+
+/* Stokta Olmayan Ürün Stili */
+.stock-info.out-of-stock {
+    background-color: #ffebee;
+    color: #c62828;
+    border-left: 4px solid #c62828;
 } 
