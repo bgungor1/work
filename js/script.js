@@ -150,4 +150,58 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+    
+    // Telefon numarası format kontrolü
+    const phoneInput = document.getElementById('phoneInput');
+    if (phoneInput) {
+        phoneInput.addEventListener('input', function(e) {
+            // Sadece rakamları al
+            let value = e.target.value.replace(/\D/g, '');
+            
+            // Maksimum 11 rakam olacak şekilde sınırla
+            if (value.length > 11) {
+                value = value.substring(0, 11);
+            }
+            
+            // Değeri doğrudan input alanına yaz
+            e.target.value = value;
+        });
+        
+        // Form gönderilmeden önce kontrol
+        phoneInput.closest('form').addEventListener('submit', function(e) {
+            const phoneValue = phoneInput.value;
+            if (phoneValue.length > 0 && phoneValue.length !== 11) {
+                alert('Lütfen 11 haneli geçerli bir telefon numarası giriniz.');
+                e.preventDefault();
+            }
+        });
+    }
+    
+    // İletişim formu gönderimi
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Formun normal gönderimini engelle
+            
+            // Form verilerini al
+            const formData = new FormData(contactForm);
+            
+            // FormSubmit.co API'sine gönder
+            fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                // Form başarıyla gönderildiyse thank-you.html sayfasına yönlendir
+                window.location.href = 'thank-you.html';
+            })
+            .catch(error => {
+                console.error('Form gönderiminde hata oluştu:', error);
+                alert('Form gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyin.');
+            });
+        });
+    }
 }); 
